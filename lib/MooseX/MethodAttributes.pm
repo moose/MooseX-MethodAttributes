@@ -45,7 +45,7 @@ sub init_meta {
         && does_role($meta->method_metaclass, 'MooseX::MethodAttributes::Role::Meta::Method')
         && does_role($meta->wrapped_method_metaclass, 'MooseX::MethodAttributes::Role::Meta::Method::MaybeWrapped');
 
-    $meta = Moose::Meta::Class->initialize( $for_class )
+    $meta = Moose::Meta::Class->create( $for_class )
         unless $meta;
 
     $meta = Moose::Util::MetaRole::apply_metaroles(

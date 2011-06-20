@@ -41,7 +41,7 @@ sub init_meta {
     return $meta if $meta
         && does_role($meta, 'MooseX::MethodAttributes::Role::Meta::Role');
 
-    $meta = Moose::Meta::Role->initialize( $for_class )
+    $meta = Moose::Meta::Role->create( $for_class )
         unless $meta;
 
     $meta = Moose::Util::MetaRole::apply_metaroles(
