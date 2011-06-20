@@ -14,6 +14,8 @@ use Test::More;
     BEGIN { extends 'MooseX::MethodAttributes::Inheritable' }
 }
 
+# FIXME - This now works with later Moose versions, but needs a
+#         bisect and a version bump to work out when it started working!
 TODO: {
     package Bar;
     use Test::More;
