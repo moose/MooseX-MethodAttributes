@@ -1,3 +1,7 @@
+
+ * Fix packages relying on ->meta->make_immutable to return true.
+   This should work, but doesn't in some occasional circumstances.
+
 0.25  Mon, 20 June 2011 11:53:00 +0100
  * Updated to avoid test issues from Moose 2.0007 (spotted by ilmari)
 
