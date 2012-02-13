@@ -32,7 +32,9 @@ init_meta
 
 =cut
 
-Moose::Exporter->setup_import_methods();
+Moose::Exporter->setup_import_methods(
+    also => 'Moose',
+);
 
 sub init_meta {
     my ($class, %options) = @_;
