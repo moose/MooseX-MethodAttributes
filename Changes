@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.28      2012-09-03 20:28:26 PDT-0700 (Karen Etheridge)
  * RT#79385: Import Carp::croak into the right package (spotted by Bill
    Moseley)
 
