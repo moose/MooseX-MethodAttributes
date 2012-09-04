@@ -5,6 +5,7 @@ use Moose::Role;
 use Moose::Util qw/find_meta/;
 use MooseX::MethodAttributes ();
 use MooseX::MethodAttributes::Role ();
+use Carp qw/croak/;
 use namespace::clean -except => 'meta';
 
 requires qw/

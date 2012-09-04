@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+ * RT#79385: Import Carp::croak into the right package (spotted by Bill
+   Moseley)
 
 0.27  2012-02-13 18:28:00 +0000
  * Fix issue with new Moose and new Module::Runtime where Moose
