@@ -21,7 +21,6 @@ use warnings;
     use Moose;
     BEGIN { extends 'Catalyst::Controller'; }
 
-    use Test::Exception;
     with 'ControllerRole' => { -excludes => 'not_attributed' };
 }
 

@@ -28,14 +28,14 @@ use warnings;
     package MyClass;
     use Moose;
     use Test::More tests => 3;
-    use Test::Exception;
+    use Test::Fatal;
 
-    throws_ok { with qw/RoleOne RoleTwo/; } qr/method name conflict/,
+    like exception { with qw/RoleOne RoleTwo/; }, qr/method name conflict/,
         'Normal methods conflict detected';
 
-    throws_ok { with qw/RoleThree RoleFour/; } qr/method name conflict/,
+    like exception { with qw/RoleThree RoleFour/; }, qr/method name conflict/,
         'Attributed methods conflict detected';
 
-    throws_ok { with qw/RoleOne RoleFour/; } qr/method name conflict/,
+    like exception { with qw/RoleOne RoleFour/; }, qr/method name conflict/,
         'Attributed and non attributed methods combination - conflict detected';
 }

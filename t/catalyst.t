@@ -7,12 +7,12 @@ use CatalystLike::Controller::Moose;
 use CatalystLike::Controller::Moose::MethodModifiers;
 
 use Test::More tests => 13;
-use Test::Exception;
+use Test::Fatal;
 
 my @methods;
-lives_ok {
+is exception {
     @methods = CatalystLike::Controller::Moose::MethodModifiers->meta->get_nearest_methods_with_attributes;
-} 'Can get nearest methods';
+}, undef, 'Can get nearest methods';
 
 is @methods, 3;
 

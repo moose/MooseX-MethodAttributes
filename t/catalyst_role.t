@@ -46,7 +46,7 @@ use warnings;
 }
 
 use Test::More tests => 21;
-use Test::Exception;
+use Test::Fatal;
 
 {
     my $method = TestApp::Controller::Moose->meta->get_method('get_foo');
@@ -72,9 +72,9 @@ use Test::Exception;
 }
 
 my @methods;
-lives_ok {
+is exception {
     @methods = TestApp::Controller::Moose::MethodModifiers->meta->get_nearest_methods_with_attributes;
-} 'Can get nearest methods';
+}, undef, 'Can get nearest methods';
 
 is @methods, 3;
 

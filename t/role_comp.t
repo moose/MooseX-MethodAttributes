@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 use Test::More;
-use Test::Exception;
+use Test::Fatal;
 
 use Moose::Util qw/apply_all_roles/;
 
@@ -49,7 +49,7 @@ use Moose::Util qw/apply_all_roles/;
 
     sub moo : Quux {}
 
-    ::lives_ok { with qw/Role1 Role2/ };
+    ::is ::exception { with qw/Role1 Role2/ }, undef;
     no Moose;
 }
 
@@ -63,7 +63,7 @@ use Moose::Util qw/apply_all_roles/;
 }
 
 my $c = CClass->new;
-lives_ok { apply_all_roles($c, qw/Role1 Role2/) };
+is exception { apply_all_roles($c, qw/Role1 Role2/) }, undef;
 
 foreach my $i (BClass->new, $c) {
     $Role1::called = $Role2::called = 0;
