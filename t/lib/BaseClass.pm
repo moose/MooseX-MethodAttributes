@@ -16,7 +16,7 @@ BEGIN {
         },
     );
 
-    extends qw/MooseX::MethodAttributes::Inheritable/;
+    with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }
 
 sub moo : Moo {}

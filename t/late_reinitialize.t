@@ -11,7 +11,7 @@ use Test::More;
 {
     package BaseClass;
     use Moose;
-    BEGIN { extends 'MooseX::MethodAttributes::Inheritable' }
+    BEGIN { with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable' }
 }
 
 # FIXME - This now works with later Moose versions, but needs a

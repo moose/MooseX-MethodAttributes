@@ -6,7 +6,7 @@ use warnings;
     use Moose;
     use namespace::clean -except => 'meta';
     use MooseX::MethodAttributes;
-    BEGIN { extends 'MooseX::MethodAttributes::Inheritable'; }
+    with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }
 
 {

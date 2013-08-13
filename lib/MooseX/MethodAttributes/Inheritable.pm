@@ -19,6 +19,9 @@ This module does the same as C<MooseX::MethodAttributes>, except that classes
 inheriting from other classes using it don't need to do anything special to get
 their code attributes captured.
 
+Note that instead of inheriting from this module, you can instead simply
+compose (C<with>) the L<MooseX::MethodAttributes::Role::AttrContainer::Inheritable> role.
+
 =cut
 
 # Ensure trait is registered

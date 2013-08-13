@@ -27,7 +27,7 @@ use MooseX::MethodAttributes ();
     use Moose;
     use namespace::clean -except => 'meta';
 
-    BEGIN { extends qw/MooseX::MethodAttributes::Inheritable/; }
+    with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }
 
 use Test::More tests => 1;

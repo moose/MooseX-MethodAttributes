@@ -30,7 +30,7 @@ use Test::More tests => 2;
     use Moose;
     use namespace::clean -except => 'meta';
 
-    BEGIN { extends qw/MooseX::MethodAttributes::Inheritable/; }
+    with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }
 
 use Moose::Util;
