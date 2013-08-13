@@ -4,7 +4,7 @@ package MooseX::MethodAttributes::Role::Meta::Map;
 use Moose::Role;
 use MooseX::Types::Moose 0.20 qw/HashRef ArrayRef Str Int/;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 has _method_attribute_map => (
     is        => 'ro',

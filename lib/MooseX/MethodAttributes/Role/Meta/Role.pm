@@ -10,7 +10,7 @@ use Moose::Role;
 use MooseX::MethodAttributes ();
 use MooseX::MethodAttributes::Role ();
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 =head1 SYNOPSIS
 

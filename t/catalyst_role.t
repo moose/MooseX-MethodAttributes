@@ -3,14 +3,14 @@ use warnings;
 {
     package Catalyst::Controller;
     use Moose;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
     use MooseX::MethodAttributes;
     with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }
 {
     package TestApp::ControllerRole;
     use Moose::Role -traits => 'MethodAttributes';
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     sub get_attribute : Local { $TestApp::Controller::Moose::GET_ATTRIBUTE_CALLED++ }
 
@@ -23,7 +23,7 @@ use warnings;
 {
     package TestApp::Controller::Moose;
     use Moose;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
     BEGIN { extends qw/Catalyst::Controller/; }
 
     our $GET_ATTRIBUTE_CALLED = 0;
@@ -35,7 +35,7 @@ use warnings;
 {
     package TestApp::Controller::Moose::MethodModifiers;
     use Moose;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
     BEGIN { extends qw/TestApp::Controller::Moose/; }
 
     our $GET_ATTRIBUTE_CALLED = 0;

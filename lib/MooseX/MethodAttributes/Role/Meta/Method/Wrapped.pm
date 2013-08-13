@@ -3,7 +3,7 @@ package MooseX::MethodAttributes::Role::Meta::Method::Wrapped;
 
 use Moose::Role;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 =method attributes
 

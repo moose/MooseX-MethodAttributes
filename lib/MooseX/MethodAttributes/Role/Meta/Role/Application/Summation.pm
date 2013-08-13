@@ -3,7 +3,7 @@ package MooseX::MethodAttributes::Role::Meta::Role::Application::Summation;
 
 use Moose::Role;
 use Moose::Util qw/does_role/;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with 'MooseX::MethodAttributes::Role::Meta::Role::Application';
 

@@ -4,7 +4,7 @@ package MooseX::MethodAttributes::Role::Meta::Class;
 use Moose::Role;
 use Moose::Util qw/find_meta does_role/;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw/
     MooseX::MethodAttributes::Role::Meta::Map

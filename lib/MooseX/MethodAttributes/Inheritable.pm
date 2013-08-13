@@ -29,7 +29,7 @@ use MooseX::MethodAttributes::Role::Meta::Role ();
 
 use Moose;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 

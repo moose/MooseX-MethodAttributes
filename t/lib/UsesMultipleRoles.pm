@@ -1,6 +1,6 @@
 package UsesMultipleRoles;
 use Moose;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with qw/
     RoleWithAttributes

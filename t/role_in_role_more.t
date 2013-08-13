@@ -5,7 +5,7 @@ use MooseX::MethodAttributes ();
 {
     package Bar;
     use Moose::Role -traits => 'MethodAttributes';
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     sub item :Chained(/app/root) PathPrefix CaptureArgs(1) { }
 }
@@ -13,7 +13,7 @@ use MooseX::MethodAttributes ();
 {
     package Foo;
     use Moose::Role -traits => 'MethodAttributes';
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     with 'Bar';
 
@@ -25,7 +25,7 @@ use MooseX::MethodAttributes ();
 {
     package Catalyst::Controller;
     use Moose;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 }

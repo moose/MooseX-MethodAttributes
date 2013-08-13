@@ -1,6 +1,6 @@
 package CatalystLike::Controller;
 use Moose;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 use MooseX::MethodAttributes;
 with 'MooseX::MethodAttributes::Role::AttrContainer::Inheritable';
 

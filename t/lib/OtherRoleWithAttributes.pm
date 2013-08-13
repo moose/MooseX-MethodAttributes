@@ -1,6 +1,6 @@
 package OtherRoleWithAttributes;
 use MooseX::MethodAttributes::Role;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 sub bar : AnAttr { 'bar' }
 

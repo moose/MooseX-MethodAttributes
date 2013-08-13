@@ -6,7 +6,7 @@ use Moose::Util qw/find_meta/;
 use MooseX::MethodAttributes ();
 use MooseX::MethodAttributes::Role ();
 use Carp qw/croak/;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 requires qw/
     _copy_attributes

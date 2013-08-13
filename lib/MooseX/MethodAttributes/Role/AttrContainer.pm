@@ -4,7 +4,7 @@ package MooseX::MethodAttributes::Role::AttrContainer;
 use Moose::Role;
 use Moose::Util qw/find_meta/;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 =method MODIFY_CODE_ATTRIBUTES ($code, @attrs)
 

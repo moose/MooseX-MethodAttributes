@@ -1,6 +1,6 @@
 package CatalystLike::Controller::Moose::MethodModifiers;
 use Moose;
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 BEGIN { extends qw/CatalystLike::Controller::Moose/; }
 
 our $GET_ATTRIBUTE_CALLED = 0;

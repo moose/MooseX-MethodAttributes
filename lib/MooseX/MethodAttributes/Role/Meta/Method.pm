@@ -3,7 +3,7 @@ package MooseX::MethodAttributes::Role::Meta::Method;
 
 use Moose::Role;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 =attr attributes
 

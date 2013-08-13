@@ -12,7 +12,7 @@ applying the meta roles relevant for capturing method attributes.
 use Moose::Role;
 use MooseX::MethodAttributes ();
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 with 'MooseX::MethodAttributes::Role::AttrContainer';
 

@@ -3,6 +3,7 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
  * change docs to recommending using a role to grant Inheritable behaviour
    rather than a superclass, and changed tests to match
+ * converted all uses of namespace::clean to namespace::autoclean
 
 0.28      2012-09-03 20:28:26 PDT-0700 (Karen Etheridge)
  * RT#79385: Import Carp::croak into the right package (spotted by Bill

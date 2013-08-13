@@ -5,7 +5,7 @@ use MooseX::MethodAttributes ();
 {
     package FirstRole;
     use Moose::Role -traits => 'MethodAttributes';
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     our $FOO_CALLED = 0;
     sub foo : Local { $FOO_CALLED++; }
@@ -25,7 +25,7 @@ use MooseX::MethodAttributes ();
 {
     package SecondRole;
     use Moose::Role;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
     with 'FirstRole';
     our $BEFORE_BAZ_CALLED = 0;
     before 'baz' => sub { $BEFORE_BAZ_CALLED++ };
@@ -33,7 +33,7 @@ use MooseX::MethodAttributes ();
 {
     package MyClass;
     use Moose;
-    use namespace::clean -except => 'meta';
+    use namespace::autoclean;
 
     with 'SecondRole';
     our $BEFORE_QUUX_CALLED = 0;

@@ -5,7 +5,7 @@ use Moose::Role;
 use Moose::Util qw/does_role/;
 use MooseX::MethodAttributes::Role::Meta::Method::Wrapped;
 
-use namespace::clean -except => 'meta';
+use namespace::autoclean;
 
 override wrap => sub {
     my $self = super;
