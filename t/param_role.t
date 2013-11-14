@@ -2,9 +2,7 @@ use strict;
 use warnings;
 
 use Test::More;
-
-BEGIN { eval { require MooseX::Role::Parameterized } or plan skip_all => 'This test needs MooseX::Role::Parameterized' }
-
+use Test::Requires 'MooseX::Role::Parameterized';
 
 package Foo;
 use MooseX::Role::Parameterized -traits => 'MooseX::MethodAttributes::Role::Meta::Role';

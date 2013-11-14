@@ -80,17 +80,21 @@ is @methods, 3;
 
 my $method = (grep { $_->name eq 'get_attribute' } @methods)[0];
 ok $method;
-is eval { $method->body }, \&TestApp::Controller::Moose::MethodModifiers::get_attribute;
+is $method->body, \&TestApp::Controller::Moose::MethodModifiers::get_attribute;
 is $TestApp::Controller::Moose::GET_ATTRIBUTE_CALLED, 0;
 is $TestApp::Controller::Moose::MethodModifiers::GET_ATTRIBUTE_CALLED, 0;
 is $TestApp::Controller::Moose::GET_FOO_CALLED, 0;
 is $TestApp::Controller::Moose::BEFORE_GET_FOO_CALLED, 0;
 
-eval { $method->body->() };
-ok !$@ or warn $@;
+is
+    exception { $method->body->() },
+    undef,
+    'can call $method->body sub';
 
-eval { (grep { $_->name eq 'get_foo' } @methods)[0]->body->(); };
-ok !$@ or warn $@;
+is
+    exception { (grep { $_->name eq 'get_foo' } @methods)[0]->body->(); },
+    undef,
+    'can find get_foo method';
 
 is $TestApp::Controller::Moose::GET_ATTRIBUTE_CALLED, 1;
 is $TestApp::Controller::Moose::MethodModifiers::GET_ATTRIBUTE_CALLED, 1;
