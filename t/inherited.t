@@ -2,8 +2,7 @@ use strict;
 use warnings;
 use Test::More tests => 9;
 
-use FindBin;
-use lib "$FindBin::Bin/lib";
+use lib 't/lib';
 
 use Moose::Util qw/does_role/;
 

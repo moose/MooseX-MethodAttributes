@@ -1,7 +1,8 @@
 use strict;
 use warnings;
-use FindBin qw/$Bin/;
-use lib "$Bin/lib";
+
+use lib 't/lib';
+
 use CatalystLike::Controller;
 use CatalystLike::Controller::Moose;
 use CatalystLike::Controller::Moose::MethodModifiers;
