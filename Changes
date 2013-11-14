@@ -5,6 +5,7 @@ Revision history for {{$dist->name}}
    rather than a superclass, and changed tests to match
  * converted all uses of namespace::clean to namespace::autoclean
  * converted all uses of Test::Exception to Test::Fatal
+ * repository migrated to the github moose organization
 
 0.28      2012-09-03 20:28:26 PDT-0700 (Karen Etheridge)
  * RT#79385: Import Carp::croak into the right package (spotted by Bill
