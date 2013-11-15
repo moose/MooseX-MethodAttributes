@@ -1,4 +1,4 @@
-.*
+/.build/
 !.gitignore
-MooseX-MethodAttributes-*
-Debian_CPANTS.txt
+/MooseX-MethodAttributes-*
+/todo.txt
