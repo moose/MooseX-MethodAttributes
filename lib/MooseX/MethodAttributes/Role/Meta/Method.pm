@@ -17,6 +17,8 @@ has attributes => (
     builder => '_build_attributes',
 );
 
+=for stopwords metamethod
+
 =method _build_attributes
 
 Builds the value of the C<attributes> attribute based on the attributes

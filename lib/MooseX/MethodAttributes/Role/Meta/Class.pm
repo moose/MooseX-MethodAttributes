@@ -44,7 +44,7 @@ sub get_method_with_attributes_list {
 =method get_all_methods_with_attributes
 
 Gets the list of meta methods of local and inherited methods of this class,
-that have attributes. Baseclass methods come before subclass methods. Methods
+that have attributes. Base class methods come before subclass methods. Methods
 of one class have the order they have been declared in.
 
 =cut
@@ -67,7 +67,7 @@ sub get_all_methods_with_attributes {
 =method get_nearest_methods_with_attributes
 
 The same as get_all_methods_with_attributes, except that methods from parent classes
-are not included if there is an attributeless method in a child class.
+are not included if there is an attribute-less method in a child class.
 
 For example, given:
 
