@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+
+0.29      2013-11-15 02:31:46Z
  * change docs to recommending using a role to grant Inheritable behaviour
    rather than a superclass, and changed tests to match
  * converted all uses of namespace::clean to namespace::autoclean
