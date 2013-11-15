@@ -33,7 +33,6 @@ use MooseX::MethodAttributes ();
 use Test::More tests => 1;
 use Moose::Util;
 use Moose::Meta::Class;;
-use Data::Dumper;
 
 my @roles = qw/Foo/;
 
@@ -53,5 +52,5 @@ is_deeply \@methods, [
     'live :Chained(item)|PathPart|Args(0)',
     'other :Attr',
 ], 'methods with expected attributes found'
-    or warn Dumper(\@methods);
+    or diag explain(\@methods);
 
