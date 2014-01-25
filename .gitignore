@@ -1,4 +1,5 @@
 /.build/
 !.gitignore
-/MooseX-MethodAttributes-*
+/MooseX-MethodAttributes-*/
+/MooseX-MethodAttributes-*.tar.gz
 /todo.txt
