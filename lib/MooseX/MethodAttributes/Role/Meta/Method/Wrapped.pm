@@ -7,8 +7,6 @@ use namespace::autoclean;
 
 =method attributes
 
-=for stopwords metamethod
-
 Gets the list of code attributes of the original method this meta method wraps.
 
 =cut

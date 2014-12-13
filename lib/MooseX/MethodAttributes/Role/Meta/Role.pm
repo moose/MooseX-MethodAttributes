@@ -34,8 +34,6 @@ you to add code attributes to methods in Moose roles.
 These attributes can then be found by introspecting the role metaclass, and are automatically copied
 into any classes or roles that the role is composed onto.
 
-=for stopwords metarole initialisation
-
 =head1 CAVEATS
 
 =over
