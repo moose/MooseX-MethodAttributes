@@ -1,5 +1,7 @@
+/.ackrc
 /.build/
-!.gitignore
+!/.gitignore
+/.latest
 /MooseX-MethodAttributes-*/
 /MooseX-MethodAttributes-*.tar.gz
 /todo.txt
