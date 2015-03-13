@@ -9,6 +9,7 @@ use Moose::Util::MetaRole;
 use Moose::Util qw/find_meta does_role/;
 # Ensure trait is registered
 use MooseX::MethodAttributes::Role::Meta::Role ();
+use namespace::autoclean;
 
 =head1 SYNOPSIS
 
