@@ -1,6 +1,8 @@
 package MooseX::MethodAttributes;
 # ABSTRACT: code attribute introspection
 
+our $VERSION = '0.30';
+
 use Moose ();
 use Moose::Exporter;
 use Moose::Util::MetaRole;

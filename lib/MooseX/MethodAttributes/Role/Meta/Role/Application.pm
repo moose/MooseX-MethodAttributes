@@ -1,6 +1,8 @@
 package MooseX::MethodAttributes::Role::Meta::Role::Application;
 # ABSTRACT: generic role for applying a role with method attributes to something
 
+our $VERSION = '0.30';
+
 use Moose::Role;
 use Moose::Util qw/find_meta/;
 use MooseX::MethodAttributes ();

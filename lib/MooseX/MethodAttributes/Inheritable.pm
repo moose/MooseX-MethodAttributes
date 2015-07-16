@@ -1,6 +1,8 @@
 package MooseX::MethodAttributes::Inheritable;
 # ABSTRACT: inheritable code attribute introspection
 
+our $VERSION = '0.30';
+
 =head1 SYNOPSIS
 
     package BaseClass;

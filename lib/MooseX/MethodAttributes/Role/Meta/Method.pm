@@ -1,6 +1,8 @@
 package MooseX::MethodAttributes::Role::Meta::Method;
 # ABSTRACT: metamethod role allowing code attribute introspection
 
+our $VERSION = '0.30';
+
 use Moose::Role;
 
 use namespace::autoclean;

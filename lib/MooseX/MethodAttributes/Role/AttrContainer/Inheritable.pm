@@ -1,6 +1,8 @@
 package MooseX::MethodAttributes::Role::AttrContainer::Inheritable;
 # ABSTRACT: capture code attributes in the automatically initialized metaclass instance
 
+our $VERSION = '0.30';
+
 =head1 DESCRIPTION
 
 This role extends C<MooseX::MethodAttributes::Role::AttrContainer> with the
