@@ -4,7 +4,7 @@ package MooseX::MethodAttributes::Role::Meta::Map;
 our $VERSION = '0.30';
 
 use Moose::Role;
-use MooseX::Types::Moose 0.20 qw/HashRef ArrayRef Str Int/;
+use MooseX::Types::Moose 0.21 qw/HashRef ArrayRef Str Int/;
 
 use namespace::autoclean;
 
