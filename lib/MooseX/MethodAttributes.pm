@@ -1,5 +1,5 @@
 package MooseX::MethodAttributes;
-# ABSTRACT: code attribute introspection
+# ABSTRACT: Code attribute introspection
 
 our $VERSION = '0.30';
 
