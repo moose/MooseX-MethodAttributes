@@ -1,0 +1,80 @@
+=pod
+
+=encoding UTF-8
+
+=head1 NAME
+
+MooseX::MethodAttributes - Code attribute introspection
+
+=head1 VERSION
+
+version 0.30
+
+=head1 SYNOPSIS
+
+    package MyClass;
+
+    use Moose;
+    use MooseX::MethodAttributes;
+
+    sub foo : Bar Baz('corge') { ... }
+
+    my $attrs = MyClass->meta->get_method('foo')->attributes; # ["Bar", "Baz('corge')"]
+
+=head1 DESCRIPTION
+
+This module allows code attributes of methods to be introspected using Moose
+meta method objects.
+
+=for Pod::Coverage init_meta
+
+=head1 AUTHORS
+
+=over 4
+
+=item *
+
+Florian Ragwitz <rafl@debian.org>
+
+=item *
+
+Tomas Doran <bobtfish@bobtfish.net>
+
+=back
+
+=head1 CONTRIBUTORS
+
+=for stopwords Karen Etheridge Dave Rolsky Marcus Ramberg Peter E Karman David Steinbrunner
+
+=over 4
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Marcus Ramberg <marcus@nordaaker.com>
+
+=item *
+
+Peter E Karman <pek@dewpoint.msi.umn.edu>
+
+=item *
+
+David Steinbrunner <dsteinbrunner@pobox.com>
+
+=back
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2009 by Florian Ragwitz.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
