@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role;
 # ABSTRACT: code attribute introspection
 
-our $VERSION = '0.31';
+our $VERSION = '0.32';
 
 use Moose ();
 use Moose::Exporter;
