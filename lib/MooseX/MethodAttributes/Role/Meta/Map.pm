@@ -4,20 +4,19 @@ package MooseX::MethodAttributes::Role::Meta::Map;
 our $VERSION = '0.32';
 
 use Moose::Role;
-use MooseX::Types::Moose 0.21 qw/HashRef ArrayRef Str Int/;
 
 use namespace::autoclean;
 
 has _method_attribute_map => (
     is        => 'ro',
-    isa       => HashRef[ArrayRef[Str]],
+    isa       => 'HashRef[ArrayRef[Str]]',
     lazy      => 1,
     default   => sub { +{} },
 );
 
 has _method_attribute_list => (
     is      => 'ro',
-    isa     => ArrayRef[Int],
+    isa     => 'ArrayRef[Int]',
     lazy    => 1,
     default => sub { [] },
 );
