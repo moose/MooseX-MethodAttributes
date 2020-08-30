@@ -1,6 +1,6 @@
 Revision history for MooseX-MethodAttributes
 
-{{$NEXT}}
+0.32      2020-08-30 01:32:08Z
  - no longer using MooseX::Types internally
 
 0.31      2015-09-27 05:28:49Z
