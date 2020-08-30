@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role::Meta::Map;
 # ABSTRACT: generic role for storing code attributes used by classes and roles with attributes
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Moose::Role;
 

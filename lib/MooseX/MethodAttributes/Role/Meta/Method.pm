@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role::Meta::Method;
 # ABSTRACT: metamethod role allowing code attribute introspection
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Moose::Role;
 

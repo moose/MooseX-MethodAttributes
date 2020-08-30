@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role::Meta::Method::MaybeWrapped;
 # ABSTRACT: proxy attributes of wrapped methods if their metaclass supports it
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Moose::Role;
 use Moose::Util qw/does_role/;

@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role::Meta::Class;
 # ABSTRACT: metaclass role for storing code attributes
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Moose::Role;
 use Moose::Util qw/find_meta does_role/;

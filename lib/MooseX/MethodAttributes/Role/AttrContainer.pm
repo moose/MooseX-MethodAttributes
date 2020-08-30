@@ -1,7 +1,7 @@
 package MooseX::MethodAttributes::Role::AttrContainer;
 # ABSTRACT: capture code attributes in the class' metaclass
 
-our $VERSION = '0.32';
+our $VERSION = '0.33';
 
 use Moose::Role;
 use Moose::Util qw/find_meta/;
